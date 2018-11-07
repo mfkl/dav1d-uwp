@@ -32,6 +32,8 @@
 #include "picture.h"
 #include "data.h"
 
+extern "C"
+{
 typedef struct Dav1dContext Dav1dContext;
 typedef struct Dav1dRef Dav1dRef;
 
@@ -101,5 +103,5 @@ DAV1D_API void dav1d_close(Dav1dContext **c_out);
  * @param c Input decoder instance.
  */
 DAV1D_API void dav1d_flush(Dav1dContext *c);
-
+}
 #endif /* __DAV1D_H__ */
