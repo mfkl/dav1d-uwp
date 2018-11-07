@@ -5,6 +5,7 @@
 
 #include "pch.h"
 #include "MainPage.xaml.h"
+#include "dav1d/dav1d.h"
 
 using namespace Dav1d_UWP_Cpp;
 
@@ -24,4 +25,7 @@ using namespace Windows::UI::Xaml::Navigation;
 MainPage::MainPage()
 {
 	InitializeComponent();
+
+	const char *version = dav1d_version();
+
 }
