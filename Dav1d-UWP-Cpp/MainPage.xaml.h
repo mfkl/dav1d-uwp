@@ -16,6 +16,7 @@ namespace Dav1d_UWP_Cpp
 	{
 	public:
 		MainPage();
-
+	private:
+		void OnLoaded(Platform::Object ^sender, Windows::UI::Xaml::RoutedEventArgs ^e);
 	};
 }

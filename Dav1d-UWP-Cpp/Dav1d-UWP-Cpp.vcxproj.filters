@@ -8,6 +8,9 @@
       <UniqueIdentifier>b47cb1b2-f946-42f3-9e60-c424f6629699</UniqueIdentifier>
       <Extensions>bmp;fbx;gif;jpg;jpeg;tga;tiff;tif;png</Extensions>
     </Filter>
+    <Filter Include="output">
+      <UniqueIdentifier>{96f75028-adac-4f33-afa2-bbbfe07571ec}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml" />
@@ -16,11 +19,23 @@
     <ClCompile Include="App.xaml.cpp" />
     <ClCompile Include="MainPage.xaml.cpp" />
     <ClCompile Include="pch.cpp" />
+    <ClCompile Include="output.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
+    <ClCompile Include="md5.cpp">
+      <Filter>output</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h" />
     <ClInclude Include="App.xaml.h" />
     <ClInclude Include="MainPage.xaml.h" />
+    <ClInclude Include="output.h">
+      <Filter>output</Filter>
+    </ClInclude>
+    <ClInclude Include="muxer.h">
+      <Filter>output</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\LockScreenLogo.scale-200.png">
